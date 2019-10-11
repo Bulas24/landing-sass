@@ -1,0 +1,118 @@
+@import "partials/params";
+@import "partials/mixins";
+
+$opacity_input: .3;
+$color: #d1cbcb;
+
+.buy{
+
+
+  &__content{
+    @include flex-center;
+    padding: 60px;
+  }
+  &__title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    opacity: $opacity_input + 0.4;
+  }
+  &__subtitle{
+    opacity: $opacity_input + 0.1;
+    margin-bottom: 50px;
+    font-weight: normal;
+  }
+  &__input-wrapper{
+    display: flex;
+   width: 900px;
+    margin: 0 auto 50px;
+    padding: 5px;
+    border: 1px solid $buy_border_color;
+  }
+  &__www{
+      justify-content: center;
+  }
+  &__help{
+    display: flex;
+    align-items: center;
+    width: 7%;
+    color: $color;
+  }
+ &__input-block{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 88%;
+   border-right: 1px solid $buy_border_color;
+   border-left: 1px solid $buy_border_color;
+ }
+  &__input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+  }
+  &__domain{
+    margin-right: 50px;
+    color: $color;
+  }
+  &__select{
+    position: relative;
+   width: 7%;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+    cursor: pointer;
+    background: url("img/angle-down-solid.svg") no-repeat right center;
+    background-size: 15%;
+    opacity: $opacity_input;
+    text-transform: uppercase;
+    margin-left: 5px;
+
+  }
+
+  &__table{
+
+    width: 800px;
+
+    & .table__row{
+    display: flex;
+    }
+
+    & .table__cell{
+      position: relative;
+      @include flex-center(row);
+      padding: 30px 40px;
+      font-size: 14px;
+      color: $color;
+      font-weight: bold;
+      width: 25%;
+
+      &:after{
+        position: absolute;
+        display: block;
+        content: ' ';
+        height: 15px;
+        width: 15px;
+        background-color: #fff;
+        right: -8px;
+        bottom: -8px;
+        z-index: 99;
+      }
+
+      &--top{
+          border-bottom: 1px solid $buy_border_color;
+        border-right: 1px solid $buy_border_color;
+      }
+
+      &--bottom{
+        border-right: 1px solid $buy_border_color;
+      }
+
+      &--noRightBorder{
+        border-right: none;
+      }
+    }
+  }
+}
