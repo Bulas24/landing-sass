@@ -1,0 +1,61 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.about{
+  padding: 40px;
+
+  &__content{
+    display: flex;
+    padding-top: 20px;
+  }
+
+  &__text{
+    width: 50%;
+    opacity: .7;
+    font-size: 14px;
+    border-right: 4px dotted $buy_border_color;
+    & p{
+      width: 85%;
+      word-spacing: 1px;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  &__title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  &__imgs{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+  }
+  &__profile{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    & .profile__img{
+      margin-bottom: 10px;
+    }
+    & .profile__name{
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    & .profile__job{
+      opacity: .5;
+      margin-bottom: 5px;
+    }
+    & .profile__soc{}
+    & .profile__icon{
+      opacity: .5;
+      margin-right: 10px;
+      cursor: pointer;
+      &:hover{
+        color: $blue;
+      }
+    }
+  }
+}
