@@ -83,7 +83,7 @@ $color: #d1cbcb;
     & .table__cell{
       position: relative;
       @include flex-center(row);
-      padding: 30px 40px;
+      padding: 30px 35px;
       font-size: 14px;
       color: $color;
       font-weight: bold;
