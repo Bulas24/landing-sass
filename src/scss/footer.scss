@@ -52,8 +52,7 @@ $footer_color: #949494;
     padding: 20px;
   }
   &__text{
-    width: 30%;
-    padding-left: 0;
+    width: 25%;
   }
   &__map{
     display: flex;
@@ -66,7 +65,7 @@ $footer_color: #949494;
   &__list{
       @include clear_list;
     font-size: 13px;
-    width: 40%;
+    width: 50%;
     & .list__item{
       padding: 5px;
       transition: .3s all;
