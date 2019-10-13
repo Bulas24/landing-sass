@@ -6,13 +6,20 @@
   top: 0;
   left: 0;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   flex: 0 0 $nav_height;
-  padding: 0 30px;
+  padding: 0 50px;
   width: 100%;
   color: $font_color;
   background: transparent;
+
+  @media screen and (max-width: $view_port) {
+    &{
+      padding: 0;
+    }
+  }
 
 
   &__brand{
@@ -23,6 +30,7 @@
   &__menu{
     @include clear_list;
     display: flex;
+    flex-flow: row wrap;
     height: $nav_height;
   }
   &__item{

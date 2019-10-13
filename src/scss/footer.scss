@@ -13,6 +13,7 @@ $footer_color: #949494;
     justify-content: space-between;
     padding: 20px 0;
     border-bottom: 1px solid $footer_color;
+    flex-flow: row wrap;
   }
   &__brand{
     font-weight: bold;
@@ -21,6 +22,7 @@ $footer_color: #949494;
   &__nav{
     @include clear_list;
     display: flex;
+    flex-flow: row wrap;
 
     & .nav__item{
       margin: 0 20px;
@@ -43,6 +45,7 @@ $footer_color: #949494;
     line-height: 1.7;
     font-size: 12px;
     width: 100%;
+    flex-flow: row wrap;
   }
 
   &__block{
@@ -87,7 +90,9 @@ $footer_color: #949494;
 
   }
   &__contact{
-    width: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    width: 15%;
 
     & .contact__item{
       margin-bottom: 5px;

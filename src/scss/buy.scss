@@ -24,10 +24,11 @@ $color: #d1cbcb;
   }
   &__input-wrapper{
     display: flex;
-   width: 900px;
+    max-width: 900px;
     margin: 0 auto 50px;
     padding: 5px;
     border: 1px solid $buy_border_color;
+    width: 100%;
   }
   &__www{
       justify-content: center;
@@ -41,8 +42,8 @@ $color: #d1cbcb;
  &__input-block{
    display: flex;
    align-items: center;
-   justify-content: space-between;
-   width: 88%;
+   justify-content: space-around;
+   width: 84%;
    border-right: 1px solid $buy_border_color;
    border-left: 1px solid $buy_border_color;
  }
@@ -58,7 +59,7 @@ $color: #d1cbcb;
   }
   &__select{
     position: relative;
-   width: 7%;
+   width: 11%;
     appearance: none;
     outline: 0;
     box-shadow: none;
@@ -74,7 +75,8 @@ $color: #d1cbcb;
 
   &__table{
 
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
 
     & .table__row{
     display: flex;
@@ -83,7 +85,7 @@ $color: #d1cbcb;
     & .table__cell{
       position: relative;
       @include flex-center(row);
-      padding: 30px 35px;
+      padding: 30px 10px;
       font-size: 14px;
       color: $color;
       font-weight: bold;
